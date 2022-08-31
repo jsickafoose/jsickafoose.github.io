@@ -2560,6 +2560,11 @@ input, select, textarea {
 			pointer-events: none;
 			opacity: 0.25;
 		}
+/* Tab indent */
+.tab{
+	margin: 0 0 2em 0;
+}
+
 
 /* Tiles */
 
