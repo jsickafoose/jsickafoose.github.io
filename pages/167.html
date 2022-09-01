@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sensor Technologies</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/checkbox.css">
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="../index.html" class="logo">
+									<span class="symbol"><!-- <img src="../images/logo.svg"  alt="" />--></span><span class="title">Home</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../generic.html">Ipsum veroeros</a></li>
+							<li><a href="../generic.html">Tempus etiam</a></li>
+							<li><a href="../generic.html">Consequat dolor</a></li>
+							<li><a href="../elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Sensing and Sensor Technologies - ECE 167</h1>
+							<span class="image main"><img src="../images/headers/167H.jpg" alt="" /></span>
+							<p>
+							This class required me to program an UNO32 microcontroller in the C language much like my Microcontroller System Design course. This class however had a focus on utilizing different sensors as well as hardware and software methods of filtering their input.
+						</p>
+
+						<p>
+							The very first lab of this class, viewable below, required me to find the angle of a variable resistance flex angle sensor. This flex sensor was set up as one resistor in a voltage divider circuit and the divided voltage was fed into a microcontroller analog-to-digital converter pin. This value was placed in a spreadsheet at measured angles of flex and a function was created to convert voltage to angle of bend. These values were then averaged over a number of samples in order to smooth out the result. This same lab also involved the analysis of different analog filters with theoretical derivations as well as experimental confirmation. The code for this lab can be found <a href="https://github.com/jsickafoose/portfolio/tree/main/code/ECE167/Lab1" target="_blank" rel="noopener noreferrer">here</a>&nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i> in my GitHub.
+						</p>
+
+					<!-- And this is if I want two buttons, one under the other -->
+					<!-- Button 1 Start -->
+						<p align="center">
+							<label class="input-check"><input onchange="change_state(this,1)" type="checkbox" value="something"/>Lab1</label>
+						</p>
+						<!-- iFrame for button 1 -->
+						<p align="center"><iframe id="iframeDisplay1" src="../docs/ECE167/ECE167-Lab1_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+
+
+					<!-- Button 2 Start -->
+						<!-- Blurb about button 2 -->
+						<p>
+							The second lab involved reading rotary encoder values and mapping them to set three PWM signals in order to control the color of an RGB LED. Twisting the rotary encoder resulted in a smooth change of the color.
+						</p>
+
+						<p>
+							This same lab also required me to map values of a ping sensor to a distance measurement which required a similar process as the flex angle sensor. Finally, this lab required me to build a circuit that could changed signal when capacitance was changed using a capacitive touch sensor. This change needed to be large and easy to read using the microcontroller and several circuits were utilized. The code for this lab can be found <a href="https://github.com/jsickafoose/portfolio/tree/main/code/ECE167/Lab2" target="_blank" rel="noopener noreferrer">here</a>&nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i>in my GitHub.
+						</p>
+						<!-- Button Object -->
+						<p align="center">
+							<label class="input-check"><input onchange="change_state(this,2)" type="checkbox" value="something"/>Lab2</label>
+						</p>
+						<!-- iFrame for button 2 -->
+						<p align="center"><iframe id="iframeDisplay2" src="../docs/ECE167/ECE167-Lab2_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+
+
+					<!-- Button 3 Start -->
+						<!-- Blurb about button 3 -->
+						<p>
+							The third lab and also the most difficult of the course involved filtering the data output from a 9-axis IMU. Each of the three-axis sensors; the accelerometer, gyroscope, and magnetometer required a different method of data filtering. All of it required recording data over a period of time and applying equations in MATLAB to adapt the results into knowing the attitude of the IMU.  The code for this one can be found <a href="https://github.com/jsickafoose/portfolio/tree/main/code/ECE167/Lab3" target="_blank" rel="noopener noreferrer">here</a>&nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i>in my GitHub.
+ 						</p>
+						<!-- Button Object -->
+						<p align="center">
+							<label class="input-check"><input onchange="change_state(this,3)" type="checkbox" value="something"/>Lab3</label>
+						</p>
+						<!-- iFrame for button 2 -->
+						<p align="center"><iframe id="iframeDisplay3" src="../docs/ECE167/ECE167-Lab3_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+
+
+					<!-- Button 4 Start -->
+						<!-- Blurb about button 4 -->
+						<p>
+							The following button shows the report for my team's final project. I was a member of a two man team given limited time to create a device which would translate the American Sign Language alphabet into ASCII letters. This was done using a glove with five flex angle sensors to determine the angle of each finger. Each of the flex angle sensors required separate value to angle mapping. This was then used to determine the angle of each finger and the combinations were read to determine the state of the hand. The code for this can be found <a href="https://github.com/jsickafoose/portfolio/tree/main/code/ECE167/FinalProject" target="_blank" rel="noopener noreferrer">here</a>&nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i>in my GitHub.
+						</p>
+						<!-- Button Object -->
+						<p align="center">
+							<label class="input-check"><input onchange="change_state(this,4)" type="checkbox" value="something"/>Final Report</label>
+						</p>
+						<!-- iFrame for button 2 -->
+						<p align="center"><iframe id="iframeDisplay4" src="../docs/ECE167/ECE167-Final_Report.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+
+
+
+					</div>
+					<script type="text/javascript">
+					function change_state(obj, docnum){
+					  	var text1 = document.getElementById("iframeDisplay1");
+					  	var text2 = document.getElementById("iframeDisplay2");
+					  	var text3 = document.getElementById("iframeDisplay3");
+					  	var text4 = document.getElementById("iframeDisplay4");
+
+					  	if (obj.checked){
+					  		obj.parentNode.classList.add("checked");	// Button checked state
+					  		if (docnum == 1){
+					  			text1.hidden = "";						// display text
+					  		}
+					  		if (docnum == 2){
+					  			text2.hidden = "";
+					  		}
+					  		if (docnum == 3){
+					  			text3.hidden = "";
+					  		}
+					  		if (docnum == 4){
+					  			text4.hidden = "";
+					  		}
+					  	}
+					  	else{
+					  		obj.parentNode.classList.remove("checked");	// Button unchecked state
+					  		if (docnum == 1){
+					  			text1.hidden = "hidden";						// display text
+					  		}
+					  		if (docnum == 2){
+					  			text2.hidden = "hidden";
+					  		}
+					  		if (docnum == 3){
+					  			text3.hidden = "hidden";
+					  		}
+					  		if (docnum == 4){
+					  			text4.hidden = "hidden";
+					  		}
+					  	}
+					}
+					</script>
+
+						<!-- Google Drive Embed -->
+						<!-- <div>
+							<p align="center">
+								<iframe
+									src="https://drive.google.com/embeddedfolderview?id=10EfeRb83oKy8_JN6pfYoUY4EqmG0jKhB#grid" width=600px height=400px style="border:1px solid black">
+   								</iframe>
+   							</p>
+						</div> -->
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!-- I commented this out because I didn't want it, but this is a message box for people to contact you -->
+							<!-- <section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section> -->
+							<section>
+								<h2>Contact me</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/jacobsickafoose/" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/jsickafoose/portfolio/tree/main/code" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<!-- <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li> --> <!-- phone icon to give them your phone number too -->
+									<li><a href="mailto:jsickafoose@outlook.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

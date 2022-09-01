@@ -54,11 +54,11 @@
 							<h1>Microcontroller System Design - ECE 121</h1>
 							<span class="image main"><img src="../images/headers/121H.jpg" alt="" /></span>
 							<p>
-								These tools included timers, Input/Output Compare, ADC, PWM, interrupts, bus and memory organization, DMA, SPI, I2C, device driver programming, serial packet communication, and clocking.
+								This class had me programming an UNO32 microcontroller in the C langauge with an emphasis on low-level direct hardware manipulation. This meant creating my own APIs to set control registers on the CPU to interface with various external systems. Some of the tools utilized include timers, Input/Output Compare, ADC, PWM, interrupts, bus and memory organization, DMA, SPI, I2C, device driver programming, serial packet communication, and clocking.
 							</p>
 
 							<p>
-								The following button can be pressed to show my team's design brief from the first few months of the course. Pressing the button again will collapse the PDF. This document served as an amalgamation of all our initial research. In addition to providing context and background for our idea, it also highlighted some potential approaches to solving the problem. This document also served to set the groundwork for our work flow moving forward through the year. 
+								The following is one lab I did which utilized I2C to communicate with the EEPROM which was on the board. An API was created to write bytes and pages from specified memory addresses as well as read them back. This information was then displayed on a computer terminal over UART. This lab also required reading from the ADC CPU module and applying a basic filter to the readings which was then saved to the EEPROM. The code for this lab can be found <a href="https://github.com/jsickafoose/portfolio/tree/main/code/ECE121/Lab3" target="_blank" rel="noopener noreferrer">here</a>&nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i>.
 							</p>
 
 					<!-- Button 1 Start -->
@@ -73,18 +73,15 @@
 						<!-- Blurb about button 2 -->
 
 						<p>
-							This class served as my first foray into using full team management tools. This included a Gantt chart for tracking task progression as well as discrete Sprints each capped with a report and design brief. Design briefs were in the form of a 2-3 hour presentation with the teaching staff where we discussed the progress of the Sprint.
+							This lab involved writing an API to utilize the Output Capture CPU module to output an adjustable PWM signal. This PWM signal was then used to control the speed of a DC motor. The speed was fedback into the microcontroller using a rotary encoder and this data was used to create a control system to change the PWM signal to command motor speeds. The SPI API used to communicate with the rotary encoder was written as part of a previous lab. The code for this lab can be found <a href="https://github.com/jsickafoose/portfolio/tree/main/code/ECE121/Lab4" target="_blank" rel="noopener noreferrer">here</a>&nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i>.
 						</p>
 
-						<p>
-							The following is an example of a Sprint Report. This course required the team to fill out a report at the end of each Sprint in order to detail the progress made. This also served to create a framework for starting the following Sprint. Sprint reports were created after design briefs so as to include instructor feedback from the Sprint.
-						</p>
 						<!-- Button Object -->
 						<p align="center">
 							<label class="input-check"><input onchange="change_state(this,2)" type="checkbox" value="something"/>SPI Feedback Control</label>
 						</p>
 						<!-- iFrame for button 2 -->
-						<p align="center"><iframe id="iframeDisplay2" src="../docs/ECE121/ECE121-Lab4_Writeup.pdf" width="90%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+						<p align="center"><iframe id="iframeDisplay2" src="../docs/ECE121/ECE121-Lab4_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
 
 
 					</div>
