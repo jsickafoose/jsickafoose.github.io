@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>UAV Theory</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/checkbox.css">
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="../index.html" class="logo">
+									<span class="symbol"><!-- <img src="../images/logo.svg"  alt="" />--></span><span class="title">Home</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../generic.html">Ipsum veroeros</a></li>
+							<li><a href="../generic.html">Tempus etiam</a></li>
+							<li><a href="../generic.html">Consequat dolor</a></li>
+							<li><a href="../elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Small-Scale UAV Theory and Practice - ECE 163</h1>
+							<span class="image main"><img src="../images/headers/163H.jpg" alt="" /></span>
+							<p>
+								This course taught us about the mathmatical models involved in tracking the full state of our aircraft model as well implementing control theory for autonomous flight. The mathematical tools utilized include coordinate frames, aerodynamics, equations of motion, full non-linear simulation, linearized dynamics models and trim states, force and moment balances for steady flight, flight controls by successive loop closure, state space control, path planning and guidance, sensors and estimation.
+							</p>
+
+							<p>
+								For my team's final project in this class, we chose to implement a camera on the bottom of the simulated UAV. This camera would start out in a "Searching for Target" state while moving towards the last known location of the target. Once the target was calculated to be within the visible range of the camera, the location was known and the UAV would enter a "Circle/Following" state where it would continue tracking the target. This is the final project document which was required to be written before the final project was completed. All the code for the simulator of this class can be found <a href="https://github.com/jsickafoose/portfolio/tree/main/code/ECE163" target="_blank" rel="noopener noreferrer">here</a>&nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i>.
+							</p>
+
+					<!-- Button 1 Start -->
+						<p align="center">
+							<label class="input-check"><input onchange="change_state(this,1)" type="checkbox" value="something"/>Final Report</label>
+						</p>
+						<!-- iFrame for button 1 -->
+						<p align="center"><iframe id="iframeDisplay1" src="../docs/ECE163/ECE163-AutonomousCameraTracking_Writeup.pdf" width="80%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+
+					</div>
+					<script type="text/javascript">
+					function change_state(obj, docnum){
+					  	var text1 = document.getElementById("iframeDisplay1");
+
+					  	if (obj.checked){
+					  		obj.parentNode.classList.add("checked");	// Button checked state
+					  		if (docnum == 1){
+					  			text1.hidden = "";						// display text
+					  		}
+					  	}
+					  	else{
+					  		obj.parentNode.classList.remove("checked");	// Button unchecked state
+					  		if (docnum == 1){
+					  			text1.hidden = "hidden";						// display text
+					  		}
+					  	}
+					}
+					</script>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<!-- I commented this out because I didn't want it, but this is a message box for people to contact you -->
+							<!-- <section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section> -->
+							<section>
+								<h2>Contact me</h2>
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/jacobsickafoose/" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/jsickafoose/portfolio/tree/main/code" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<!-- <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li> --> <!-- phone icon to give them your phone number too -->
+									<li><a href="mailto:jsickafoose@outlook.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
