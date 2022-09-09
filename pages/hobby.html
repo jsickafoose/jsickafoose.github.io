@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Logic Design</title>
+		<title>Hobbyist Works</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -51,87 +51,97 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Logic Design - CSE 100</h1>
-							<span class="image main"><img src="../images/headers/100H.jpg" alt="" /></span>
+							<h1>A Collection of Personal Hobbyist Projects</h1>
+							<span class="image main"><img src="../images/headers/129H.jpg" alt="" /></span>
 							<p>
-								In my Logic Design course, I was required to implement several different programs to run on an FPGA board. The design problems scaled beginning with basic arithmatic using numbers shown on 7-segment displays in Lab2, code found <a href="https://github.com/jsickafoose/portfolio/tree/main/code/CSE100/lab2" target="_blank" rel="noopener noreferrer">here</a>&nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i>. The most difficult lab required creating a video game which was displayed over VGA on an external monitor as <a href="https://github.com/jsickafoose/portfolio/tree/main/code/CSE100/lab7" target="_blank" rel="noopener noreferrer">Lab7</a>&nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i>. The rest of the labs can be explored with the buttons below which display the write-ups, containing a description of the lab at the top of each.
+								I was one member of a two person team in my Senior Design Project. Our project aimed to simulate virtual reality textures using transcutaneous electrical nerve stimulation. Creating the electrical nerve interface required circuit design and modeling, iterative prototyping, additive manufacturing, and microcontroller programming to implement specific waveforms. The Senior Design Project was a three-part course so a lot of time was allocated for each deliverable. The hardwork has been recognized and our team received a prize in the 2022 Santa Cruz Launchpad Pitch Competition.
 							</p>
+
+							<p>
+								The following button can be pressed to show my team's design brief from the first few months of the course. Pressing the button again will collapse the PDF. This document served as an amalgamation of all our initial research. In addition to providing context and background for our idea, it also highlighted some potential approaches to solving the problem. This document also served to set the groundwork for our work flow moving forward through the year. 
+							</p>
+
+						<!-- Direct PDF Embed -->
+						<!-- <div>
+							<p align="center">
+								<iframe
+									src="../docs/ECE129/ECE129-Final_Report.pdf" width="90%" height="750px" style="border:2px solid black;">
+   								</iframe>
+   							</p>
+						</div> -->
+
+					<!-- Final Checkbox solution -->
+					<!-- This is if I want two buttons side by side -->
+					<!-- <p align="center">
+						<label class="input-check"><input onchange="change_state(this,1)" type="checkbox" value="something" name="test"/> Final Report </label>
+
+						<label class="input-check"><input onchange="change_state(this,2)" type="checkbox" value="something" name="test"/> OtherButton </label>
+					</p> -->
 
 					<!-- And this is if I want two buttons, one under the other -->
 					<!-- Button 1 Start -->
 						<p align="center">
-							<label class="input-check"><input onchange="change_state(this,1)" type="checkbox" value="something"/>Lab1</label>
+							<label class="input-check"><input onchange="change_state(this,1)" type="checkbox" value="something"/>Design Brief</label>
 						</p>
 						<!-- iFrame for button 1 -->
-						<p align="center"><iframe id="iframeDisplay1" src="../docs/CSE100/CSE100-Lab1_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+						<p align="center"><iframe id="iframeDisplay1" src="../docs/ECE129/ECE129-Tactile_Simulation_Team_Design_Brief.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+
 
 					<!-- Button 2 Start -->
 						<!-- Blurb about button 2 -->
+
+						<p>
+							This class served as my first foray into using full team management tools. This included a Gantt chart for tracking task progression as well as discrete Sprints each capped with a report and design brief. Design briefs were in the form of a 2-3 hour presentation with the teaching staff where we discussed the progress of the Sprint.
+						</p>
+
+						<p>
+							The following is an example of a Sprint Report. This course required the team to fill out a report at the end of each Sprint in order to detail the progress made. This also served to create a framework for starting the following Sprint. Sprint reports were created after design briefs so as to include instructor feedback from the Sprint.
+						</p>
 						<!-- Button Object -->
 						<p align="center">
-							<label class="input-check"><input onchange="change_state(this,2)" type="checkbox" value="something"/>Lab2</label>
+							<label class="input-check"><input onchange="change_state(this,2)" type="checkbox" value="something"/> Sprint Report </label>
 						</p>
 						<!-- iFrame for button 2 -->
-						<p align="center"><iframe id="iframeDisplay2" src="../docs/CSE100/CSE100-Lab2_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+						<p align="center"><iframe id="iframeDisplay2" src="../docs/ECE129/ECE129-Sprint5_Report.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+
 
 					<!-- Button 3 Start -->
 						<!-- Blurb about button 3 -->
+						<p>
+							The following button includes an example of notes taken for a specific task. This task was the initial creation of the code to run on our Microcontroller. This Microcontroller was responsible for timing the signals which we will ultimately driving through the surface electrodes. I created these notes for internal team use and they were not required for a grade or submitted. It was created as a reference to help with future development of the project by aiding in the understanding of the code. The corresponding code as well as the final code can be found <a href="https://github.com/jsickafoose/portfolio/tree/main/code/ECE129" target="_blank" rel="noopener noreferrer">here</a>&nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i> in my GitHub.
+						</p>
 						<!-- Button Object -->
 						<p align="center">
-							<label class="input-check"><input onchange="change_state(this,3)" type="checkbox" value="something"/>Lab3</label>
+							<label class="input-check"><input onchange="change_state(this,3)" type="checkbox" value="something"/> Microcontroller Code Write-up </label>
 						</p>
 						<!-- iFrame for button 2 -->
-						<p align="center"><iframe id="iframeDisplay3" src="../docs/CSE100/CSE100-Lab3_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+						<p align="center"><iframe id="iframeDisplay3" src="../docs/ECE129/ECE129-Task2_2_1.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
 
 
 					<!-- Button 4 Start -->
 						<!-- Blurb about button 4 -->
+						<p>
+							A similar write-up of a task was created to document the process of developing the electrode driving circuit. This does not include the final design as many revisions were necessary. This write-up did however help my partner understand the work I had done which allowed him to better help me continue development.
+						</p>
 						<!-- Button Object -->
 						<p align="center">
-							<label class="input-check"><input onchange="change_state(this,4)" type="checkbox" value="something"/>Lab4</label>
+							<label class="input-check"><input onchange="change_state(this,4)" type="checkbox" value="something"/> Circuit Write-up </label>
 						</p>
 						<!-- iFrame for button 2 -->
-						<p align="center"><iframe id="iframeDisplay4" src="../docs/CSE100/CSE100-Lab4_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
+						<p align="center"><iframe id="iframeDisplay4" src="../docs/ECE129/ECE129-Task2_2_2.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
 
 
 					<!-- Button 5 Start -->
 						<!-- Blurb about button 5 -->
+						<p>
+							The Final Report served to fully detail the project as it was at the end of the course. It was created to describe the device and not the steps leading up to each design decision. This was done keep the document as concise and as relevant as possible.
+						</p>
 						<!-- Button Object -->
 						<p align="center">
-							<label class="input-check"><input onchange="change_state(this,5)" type="checkbox" value="something"/>Lab5</label>
+							<label class="input-check"><input onchange="change_state(this,5)" type="checkbox" value="something"/> Final Report </label>
 						</p>
 						<!-- iFrame for button 2 -->
-						<p align="center"><iframe id="iframeDisplay5" src="../docs/CSE100/CSE100-Lab5_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
-
-
-						<!-- Button 6 Start -->
-						<!-- Blurb about button 6 -->
-						<!-- Button Object -->
-						<p align="center">
-							<label class="input-check"><input onchange="change_state(this,6)" type="checkbox" value="something"/>Lab6</label>
-						</p>
-						<!-- iFrame for button 2 -->
-						<p align="center"><iframe id="iframeDisplay6" src="../docs/CSE100/CSE100-Lab6_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
-
-
-						<!-- Button 7 Start -->
-						<!-- Blurb about button 7 -->
-						<!-- Button Object -->
-						<p align="center">
-							<label class="input-check"><input onchange="change_state(this,7)" type="checkbox" value="something"/>Lab7</label>
-						</p>
-						<!-- iFrame for button 2 -->
-						<p align="center"><iframe id="iframeDisplay7" src="../docs/CSE100/CSE100-Lab7_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
-
-
-						<!-- Button 8 Start -->
-						<!-- Blurb about button 8 -->
-						<!-- Button Object -->
-						<p align="center">
-							<label class="input-check"><input onchange="change_state(this,8)" type="checkbox" value="something"/>Lab8</label>
-						</p>
-						<!-- iFrame for button 2 -->
-						<p align="center"><iframe id="iframeDisplay8" src="../docs/CSE100/CSE100-Lab8_Writeup.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"></iframe></p>
+						<p align="center"><iframe id="iframeDisplay5" src="../docs/ECE129/ECE129-Final_Report.pdf" width="100%" height="900px" style="border:2px solid black" hidden="hidden"> </iframe></p>
 
 
 
@@ -143,9 +153,6 @@
 					  	var text3 = document.getElementById("iframeDisplay3");
 					  	var text4 = document.getElementById("iframeDisplay4");
 					  	var text5 = document.getElementById("iframeDisplay5");
-					  	var text6 = document.getElementById("iframeDisplay6");
-					  	var text7 = document.getElementById("iframeDisplay7");
-					  	var text8 = document.getElementById("iframeDisplay8");
 
 					  	if (obj.checked){
 					  		obj.parentNode.classList.add("checked");	// Button checked state
@@ -164,15 +171,6 @@
 					  		if (docnum == 5){
 					  			text5.hidden = "";
 					  		}
-					  		if (docnum == 6){
-					  			text6.hidden = "";
-					  		}
-					  		if (docnum == 7){
-					  			text7.hidden = "";
-					  		}
-					  		if (docnum == 8){
-					  			text8.hidden = "";
-					  		}
 					  	}
 					  	else{
 					  		obj.parentNode.classList.remove("checked");	// Button unchecked state
@@ -190,15 +188,6 @@
 					  		}
 					  		if (docnum == 5){
 					  			text5.hidden = "hidden";
-					  		}
-					  		if (docnum == 6){
-					  			text6.hidden = "hidden";
-					  		}
-					  		if (docnum == 7){
-					  			text7.hidden = "hidden";
-					  		}
-					  		if (docnum == 8){
-					  			text8.hidden = "hidden";
 					  		}
 					  	}
 					}
